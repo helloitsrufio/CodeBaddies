@@ -6,3 +6,9 @@
 // 348597 => [7,9,5,8,4,3]
 // 0 => [0]
 
+function digitize(n) {
+  return String(n).split("").map(Number).reverse();
+}
+
+console.log(digitize("348597")); // [7,9,5,8,4,3]
+console.log(digitize("0")); // [0]
